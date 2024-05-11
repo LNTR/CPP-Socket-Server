@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/Projects/C++/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -g -std=gnu++11 -o CMakeFiles\\HelloWorldProject.dir\\main.cpp.obj -c D:\\Projects\\C++\\main.cpp",
+  "file": "D:/Projects/C++/main.cpp",
+  "output": "CMakeFiles/HelloWorldProject.dir/main.cpp.obj"
+}
+]

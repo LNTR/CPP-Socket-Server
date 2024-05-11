@@ -1,0 +1,3 @@
+"C:\Program Files\Cmake\bin\cmake.exe" -E rm -f CMakeFiles\HelloWorldProject.dir/objects.a
+C:\PROGRA~1\LLVM\bin\llvm-ar.exe qc CMakeFiles\HelloWorldProject.dir/objects.a @CMakeFiles\HelloWorldProject.dir\objects1.rsp
+C:\PROGRA~1\LLVM\bin\CLANG_~1.EXE -g -Wl,--whole-archive CMakeFiles\HelloWorldProject.dir/objects.a -Wl,--no-whole-archive -o HelloWorldProject.exe -Wl,--out-implib,libHelloWorldProject.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\HelloWorldProject.dir\linkLibs.rsp
