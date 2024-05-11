@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "HelloWorldProject.exe"
+			"path" : "SocketServer.exe"
 		},
 		{
-			"path" : "HelloWorldProject.pdb"
+			"path" : "SocketServer.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 13,
+				"line" : 5,
 				"parent" : 0
 			}
 		]
@@ -38,25 +38,17 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++11"
+					"fragment" : "-g"
 				}
 			],
 			"language" : "CXX",
-			"languageStandard" : 
-			{
-				"backtraces" : 
-				[
-					1
-				],
-				"standard" : "11"
-			},
 			"sourceIndexes" : 
 			[
 				0
 			]
 		}
 	],
-	"id" : "HelloWorldProject::@6890427a1f51a3e7e1df",
+	"id" : "SocketServer::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +68,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "HelloWorldProject",
-	"nameOnDisk" : "HelloWorldProject.exe",
+	"name" : "SocketServer",
+	"nameOnDisk" : "SocketServer.exe",
 	"paths" : 
 	{
 		"build" : ".",

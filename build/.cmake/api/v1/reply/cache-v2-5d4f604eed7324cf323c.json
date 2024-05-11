@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/llvm-addr2line.exe"
+			"value" : "C:/msys64/ucrt64/bin/addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -31,7 +31,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/llvm-ar.exe"
+			"value" : "C:/msys64/ucrt64/bin/ar.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "28"
+			"value" : "29"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,23 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "0"
-		},
-		{
-			"name" : "CMAKE_COLOR_MAKEFILE",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Enable/Disable color output during build."
-				}
-			],
-			"type" : "BOOL",
-			"value" : "ON"
+			"value" : "2"
 		},
 		{
 			"name" : "CMAKE_COMMAND",
@@ -119,7 +103,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Cmake/bin/cmake.exe"
+			"value" : "C:/msys64/ucrt64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -131,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Cmake/bin/cpack.exe"
+			"value" : "C:/msys64/ucrt64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -143,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Cmake/bin/ctest.exe"
+			"value" : "C:/msys64/ucrt64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -159,7 +143,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/clang++.exe"
+			"value" : "C:/msys64/ucrt64/bin/g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -171,27 +155,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "LLVM archiver"
+					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/llvm-ar.exe"
-		},
-		{
-			"name" : "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "`clang-scan-deps` dependency scanner"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+			"value" : "C:/msys64/ucrt64/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -203,11 +171,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Generate index for LLVM archive"
+					"value" : "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/llvm-ranlib.exe"
+			"value" : "C:/msys64/ucrt64/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -319,7 +287,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/clang.exe"
+			"value" : "C:/msys64/ucrt64/bin/gcc.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -331,27 +299,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "LLVM archiver"
+					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/llvm-ar.exe"
-		},
-		{
-			"name" : "CMAKE_C_COMPILER_CLANG_SCAN_DEPS",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "`clang-scan-deps` dependency scanner"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "CMAKE_C_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+			"value" : "C:/msys64/ucrt64/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -363,11 +315,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Generate index for LLVM archive"
+					"value" : "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/llvm-ranlib.exe"
+			"value" : "C:/msys64/ucrt64/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -479,19 +431,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/llvm-dlltool.exe"
-		},
-		{
-			"name" : "CMAKE_EDIT_COMMAND",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to cache edit program executable."
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Cmake/bin/cmake-gui.exe"
+			"value" : "C:/msys64/ucrt64/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -631,7 +571,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "MinGW Makefiles"
+			"value" : "Ninja"
 		},
 		{
 			"name" : "CMAKE_GENERATOR_INSTANCE",
@@ -703,7 +643,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/HelloWorldProject"
+			"value" : "C:/Program Files (x86)/SocketServer"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -719,7 +659,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/ld.lld.exe"
+			"value" : "C:/msys64/ucrt64/bin/ld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -731,11 +671,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "make program"
+					"value" : "Program used to build from build.ninja files."
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/PROGRA~1/LLVM/bin/mingw32-make.exe"
+			"value" : "C:/msys64/ucrt64/bin/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -831,7 +771,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/llvm-nm.exe"
+			"value" : "C:/msys64/ucrt64/bin/nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -859,7 +799,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/llvm-objcopy.exe"
+			"value" : "C:/msys64/ucrt64/bin/objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -875,7 +815,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/llvm-objdump.exe"
+			"value" : "C:/msys64/ucrt64/bin/objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -923,7 +863,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "HelloWorldProject"
+			"value" : "SocketServer"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -939,7 +879,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/llvm-ranlib.exe"
+			"value" : "C:/msys64/ucrt64/bin/ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -955,7 +895,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/windres.exe"
+			"value" : "C:/msys64/ucrt64/bin/windres.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -1063,7 +1003,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/llvm-readelf.exe"
+			"value" : "C:/msys64/ucrt64/bin/readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1075,7 +1015,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Cmake/share/cmake-3.28"
+			"value" : "C:/msys64/ucrt64/share/cmake"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1283,7 +1223,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/LLVM/bin/llvm-strip.exe"
+			"value" : "C:/msys64/ucrt64/bin/strip.exe"
 		},
 		{
 			"name" : "CMAKE_TAPI",
@@ -1318,7 +1258,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "HelloWorldProject_BINARY_DIR",
+			"name" : "SocketServer_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1330,7 +1270,7 @@
 			"value" : "D:/Projects/C++/build"
 		},
 		{
-			"name" : "HelloWorldProject_IS_TOP_LEVEL",
+			"name" : "SocketServer_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1342,7 +1282,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "HelloWorldProject_SOURCE_DIR",
+			"name" : "SocketServer_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1363,7 +1303,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "FALSE"
+			"value" : "TRUE"
 		}
 	],
 	"kind" : "cache",

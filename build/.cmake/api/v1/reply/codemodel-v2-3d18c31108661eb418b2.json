@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "HelloWorldProject",
+					"name" : "SocketServer",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "HelloWorldProject::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-HelloWorldProject-Debug-04c9468fa8c63fcca6dc.json",
-					"name" : "HelloWorldProject",
+					"id" : "SocketServer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SocketServer-Debug-bc388bad76daf2907d01.json",
+					"name" : "SocketServer",
 					"projectIndex" : 0
 				}
 			]
@@ -55,6 +55,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 7
 	}
 }

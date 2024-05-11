@@ -1,7 +1,10 @@
-// main.cpp
-#include <iostream>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <stdio.h>
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
+#pragma comment(lib, "Ws2_32.lib")
+
+int main()
+{
     return 0;
 }
