@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "SocketServer.exe"
+			"path" : "client.exe"
 		},
 		{
-			"path" : "SocketServer.pdb"
+			"path" : "client.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -48,7 +48,7 @@
 			]
 		}
 	],
-	"id" : "SocketServer::@6890427a1f51a3e7e1df",
+	"id" : "client::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -68,8 +68,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "SocketServer",
-	"nameOnDisk" : "SocketServer.exe",
+	"name" : "client",
+	"nameOnDisk" : "client.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -90,7 +90,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "client.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

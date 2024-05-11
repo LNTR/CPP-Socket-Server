@@ -41,37 +41,70 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/Projects/C++/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target SocketServer
+# Object build statements for EXECUTABLE target client
 
 
 #############################################
-# Order-only phony target for SocketServer
+# Order-only phony target for client
 
-build cmake_object_order_depends_target_SocketServer: phony || .
+build cmake_object_order_depends_target_client: phony || .
 
-build CMakeFiles/SocketServer.dir/main.cpp.obj: CXX_COMPILER__SocketServer_unscanned_Debug D$:/Projects/C++/main.cpp || cmake_object_order_depends_target_SocketServer
-  DEP_FILE = CMakeFiles\SocketServer.dir\main.cpp.obj.d
+build CMakeFiles/client.dir/client.cpp.obj: CXX_COMPILER__client_unscanned_Debug D$:/Projects/C++/client.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = CMakeFiles\client.dir\client.cpp.obj.d
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles\SocketServer.dir
-  OBJECT_FILE_DIR = CMakeFiles\SocketServer.dir
+  OBJECT_DIR = CMakeFiles\client.dir
+  OBJECT_FILE_DIR = CMakeFiles\client.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target SocketServer
+# Link build statements for EXECUTABLE target client
 
 
 #############################################
-# Link the executable SocketServer.exe
+# Link the executable client.exe
 
-build SocketServer.exe: CXX_EXECUTABLE_LINKER__SocketServer_Debug CMakeFiles/SocketServer.dir/main.cpp.obj
+build client.exe: CXX_EXECUTABLE_LINKER__client_Debug CMakeFiles/client.dir/client.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\SocketServer.dir
+  OBJECT_DIR = CMakeFiles\client.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = SocketServer.exe
-  TARGET_IMPLIB = libSocketServer.dll.a
-  TARGET_PDB = SocketServer.exe.dbg
+  TARGET_FILE = client.exe
+  TARGET_IMPLIB = libclient.dll.a
+  TARGET_PDB = client.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target server
+
+
+#############################################
+# Order-only phony target for server
+
+build cmake_object_order_depends_target_server: phony || .
+
+build CMakeFiles/server.dir/server.cpp.obj: CXX_COMPILER__server_unscanned_Debug D$:/Projects/C++/server.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = CMakeFiles\server.dir\server.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\server.dir
+  OBJECT_FILE_DIR = CMakeFiles\server.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target server
+
+
+#############################################
+# Link the executable server.exe
+
+build server.exe: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/server.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\server.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = server.exe
+  TARGET_IMPLIB = libserver.dll.a
+  TARGET_PDB = server.exe.dbg
 
 
 #############################################
@@ -99,7 +132,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build SocketServer: phony SocketServer.exe
+build client: phony client.exe
+
+build server: phony server.exe
 
 # =============================================================================
 # Folder targets.
@@ -109,7 +144,7 @@ build SocketServer: phony SocketServer.exe
 #############################################
 # Folder: D:/Projects/C++/build
 
-build all: phony SocketServer.exe
+build all: phony client.exe server.exe
 
 # =============================================================================
 # Built-in targets

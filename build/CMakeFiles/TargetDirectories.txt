@@ -1,3 +1,4 @@
-D:/Projects/C++/build/CMakeFiles/SocketServer.dir
+D:/Projects/C++/build/CMakeFiles/client.dir
+D:/Projects/C++/build/CMakeFiles/server.dir
 D:/Projects/C++/build/CMakeFiles/edit_cache.dir
 D:/Projects/C++/build/CMakeFiles/rebuild_cache.dir
