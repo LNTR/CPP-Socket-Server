@@ -149,6 +149,133 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/share/cmake/Modules/FindBoost.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/boost_thread-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/boost_thread-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/BoostDetectToolset-1.84.0.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/libboost_thread-variant-mt-shared.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/libboost_thread-variant-mt-static.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/boost_chrono-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/boost_chrono-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/BoostDetectToolset-1.84.0.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/libboost_chrono-variant-mt-shared.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/libboost_chrono-variant-mt-static.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
