@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/Projects/C++/build/
+cmake_ninja_workdir = D$:/Projects/C++/Socket$ Server/build/
 # =============================================================================
 # Object build statements for EXECUTABLE target client
 
@@ -49,12 +49,12 @@ cmake_ninja_workdir = D$:/Projects/C++/build/
 
 build cmake_object_order_depends_target_client: phony || .
 
-build CMakeFiles/client.dir/client.cpp.obj: CXX_COMPILER__client_unscanned_Debug D$:/Projects/C++/client.cpp || cmake_object_order_depends_target_client
+build CMakeFiles/client.dir/client-server/client.cpp.obj: CXX_COMPILER__client_unscanned_Debug D$:/Projects/C++/Socket$ Server/client-server/client.cpp || cmake_object_order_depends_target_client
   DEFINES = -DBOOST_CHRONO_DYN_LINK -DBOOST_CHRONO_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB
-  DEP_FILE = CMakeFiles\client.dir\client.cpp.obj.d
+  DEP_FILE = CMakeFiles\client.dir\client-server\client.cpp.obj.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles\client.dir
-  OBJECT_FILE_DIR = CMakeFiles\client.dir
+  OBJECT_FILE_DIR = CMakeFiles\client.dir\client-server
 
 
 # =============================================================================
@@ -62,15 +62,15 @@ build CMakeFiles/client.dir/client.cpp.obj: CXX_COMPILER__client_unscanned_Debug
 
 
 #############################################
-# Link the executable client.exe
+# Link the executable client-server\client.exe
 
-build client.exe: CXX_EXECUTABLE_LINKER__client_Debug CMakeFiles/client.dir/client.cpp.obj | C$:/msys64/ucrt64/lib/libboost_thread-mt.dll.a C$:/msys64/ucrt64/lib/libboost_chrono-mt.dll.a
+build client-server/client.exe: CXX_EXECUTABLE_LINKER__client_Debug CMakeFiles/client.dir/client-server/client.cpp.obj | C$:/msys64/ucrt64/lib/libboost_thread-mt.dll.a C$:/msys64/ucrt64/lib/libboost_chrono-mt.dll.a
   FLAGS = -g
   LINK_LIBRARIES = -lwsock32  -lws2_32  C:/msys64/ucrt64/lib/libboost_thread-mt.dll.a  C:/msys64/ucrt64/lib/libboost_chrono-mt.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\client.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = client.exe
+  TARGET_FILE = client-server\client.exe
   TARGET_IMPLIB = libclient.dll.a
   TARGET_PDB = client.exe.dbg
 
@@ -83,12 +83,12 @@ build client.exe: CXX_EXECUTABLE_LINKER__client_Debug CMakeFiles/client.dir/clie
 
 build cmake_object_order_depends_target_server: phony || .
 
-build CMakeFiles/server.dir/server.cpp.obj: CXX_COMPILER__server_unscanned_Debug D$:/Projects/C++/server.cpp || cmake_object_order_depends_target_server
+build CMakeFiles/server.dir/client-server/server.cpp.obj: CXX_COMPILER__server_unscanned_Debug D$:/Projects/C++/Socket$ Server/client-server/server.cpp || cmake_object_order_depends_target_server
   DEFINES = -DBOOST_CHRONO_DYN_LINK -DBOOST_CHRONO_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB
-  DEP_FILE = CMakeFiles\server.dir\server.cpp.obj.d
+  DEP_FILE = CMakeFiles\server.dir\client-server\server.cpp.obj.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles\server.dir
-  OBJECT_FILE_DIR = CMakeFiles\server.dir
+  OBJECT_FILE_DIR = CMakeFiles\server.dir\client-server
 
 
 # =============================================================================
@@ -96,24 +96,126 @@ build CMakeFiles/server.dir/server.cpp.obj: CXX_COMPILER__server_unscanned_Debug
 
 
 #############################################
-# Link the executable server.exe
+# Link the executable client-server\server.exe
 
-build server.exe: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/server.cpp.obj | C$:/msys64/ucrt64/lib/libboost_thread-mt.dll.a C$:/msys64/ucrt64/lib/libboost_chrono-mt.dll.a
+build client-server/server.exe: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/client-server/server.cpp.obj | C$:/msys64/ucrt64/lib/libboost_thread-mt.dll.a C$:/msys64/ucrt64/lib/libboost_chrono-mt.dll.a
   FLAGS = -g
   LINK_LIBRARIES = -lwsock32  -lws2_32  C:/msys64/ucrt64/lib/libboost_thread-mt.dll.a  C:/msys64/ucrt64/lib/libboost_chrono-mt.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\server.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = server.exe
+  TARGET_FILE = client-server\server.exe
   TARGET_IMPLIB = libserver.dll.a
   TARGET_PDB = server.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target daytime-client
+
+
+#############################################
+# Order-only phony target for daytime-client
+
+build cmake_object_order_depends_target_daytime-client: phony || .
+
+build CMakeFiles/daytime-client.dir/daytime-server/daytime-client.cpp.obj: CXX_COMPILER__daytime-client_unscanned_Debug D$:/Projects/C++/Socket$ Server/daytime-server/daytime-client.cpp || cmake_object_order_depends_target_daytime-client
+  DEFINES = -DBOOST_CHRONO_DYN_LINK -DBOOST_CHRONO_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB
+  DEP_FILE = CMakeFiles\daytime-client.dir\daytime-server\daytime-client.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\daytime-client.dir
+  OBJECT_FILE_DIR = CMakeFiles\daytime-client.dir\daytime-server
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target daytime-client
+
+
+#############################################
+# Link the executable daytime-server\daytime-client.exe
+
+build daytime-server/daytime-client.exe: CXX_EXECUTABLE_LINKER__daytime-client_Debug CMakeFiles/daytime-client.dir/daytime-server/daytime-client.cpp.obj | C$:/msys64/ucrt64/lib/libboost_thread-mt.dll.a C$:/msys64/ucrt64/lib/libboost_chrono-mt.dll.a
+  FLAGS = -g
+  LINK_LIBRARIES = -lwsock32  -lws2_32  C:/msys64/ucrt64/lib/libboost_thread-mt.dll.a  C:/msys64/ucrt64/lib/libboost_chrono-mt.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\daytime-client.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = daytime-server\daytime-client.exe
+  TARGET_IMPLIB = libdaytime-client.dll.a
+  TARGET_PDB = daytime-client.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target daytime-server-sync
+
+
+#############################################
+# Order-only phony target for daytime-server-sync
+
+build cmake_object_order_depends_target_daytime-server-sync: phony || .
+
+build CMakeFiles/daytime-server-sync.dir/daytime-server/daytime-server-sync.cpp.obj: CXX_COMPILER__daytime-server-sync_unscanned_Debug D$:/Projects/C++/Socket$ Server/daytime-server/daytime-server-sync.cpp || cmake_object_order_depends_target_daytime-server-sync
+  DEFINES = -DBOOST_CHRONO_DYN_LINK -DBOOST_CHRONO_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB
+  DEP_FILE = CMakeFiles\daytime-server-sync.dir\daytime-server\daytime-server-sync.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\daytime-server-sync.dir
+  OBJECT_FILE_DIR = CMakeFiles\daytime-server-sync.dir\daytime-server
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target daytime-server-sync
+
+
+#############################################
+# Link the executable daytime-server\daytime-server-sync.exe
+
+build daytime-server/daytime-server-sync.exe: CXX_EXECUTABLE_LINKER__daytime-server-sync_Debug CMakeFiles/daytime-server-sync.dir/daytime-server/daytime-server-sync.cpp.obj | C$:/msys64/ucrt64/lib/libboost_thread-mt.dll.a C$:/msys64/ucrt64/lib/libboost_chrono-mt.dll.a
+  FLAGS = -g
+  LINK_LIBRARIES = -lwsock32  -lws2_32  C:/msys64/ucrt64/lib/libboost_thread-mt.dll.a  C:/msys64/ucrt64/lib/libboost_chrono-mt.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\daytime-server-sync.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = daytime-server\daytime-server-sync.exe
+  TARGET_IMPLIB = libdaytime-server-sync.dll.a
+  TARGET_PDB = daytime-server-sync.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target daytime-server-async
+
+
+#############################################
+# Order-only phony target for daytime-server-async
+
+build cmake_object_order_depends_target_daytime-server-async: phony || .
+
+build CMakeFiles/daytime-server-async.dir/daytime-server/daytime-server-async.cpp.obj: CXX_COMPILER__daytime-server-async_unscanned_Debug D$:/Projects/C++/Socket$ Server/daytime-server/daytime-server-async.cpp || cmake_object_order_depends_target_daytime-server-async
+  DEFINES = -DBOOST_CHRONO_DYN_LINK -DBOOST_CHRONO_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB
+  DEP_FILE = CMakeFiles\daytime-server-async.dir\daytime-server\daytime-server-async.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\daytime-server-async.dir
+  OBJECT_FILE_DIR = CMakeFiles\daytime-server-async.dir\daytime-server
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target daytime-server-async
+
+
+#############################################
+# Link the executable daytime-server\daytime-server-async.exe
+
+build daytime-server/daytime-server-async.exe: CXX_EXECUTABLE_LINKER__daytime-server-async_Debug CMakeFiles/daytime-server-async.dir/daytime-server/daytime-server-async.cpp.obj | C$:/msys64/ucrt64/lib/libboost_thread-mt.dll.a C$:/msys64/ucrt64/lib/libboost_chrono-mt.dll.a
+  FLAGS = -g
+  LINK_LIBRARIES = -lwsock32  -lws2_32  C:/msys64/ucrt64/lib/libboost_thread-mt.dll.a  C:/msys64/ucrt64/lib/libboost_chrono-mt.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\daytime-server-async.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = daytime-server\daytime-server-async.exe
+  TARGET_IMPLIB = libdaytime-server-async.dll.a
+  TARGET_PDB = daytime-server-async.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\Projects\C++\build && C:\msys64\ucrt64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "D:\Projects\C++\Socket Server\build" && C:\msys64\ucrt64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -124,7 +226,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\Projects\C++\build && C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -SD:\Projects\C++ -BD:\Projects\C++\build"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "D:\Projects\C++\Socket Server\build" && C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -S"D:\Projects\C++\Socket Server" -B"D:\Projects\C++\Socket Server\build""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -134,9 +236,25 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build client: phony client.exe
+build client: phony client-server/client.exe
 
-build server: phony server.exe
+build client.exe: phony client-server/client.exe
+
+build daytime-client: phony daytime-server/daytime-client.exe
+
+build daytime-client.exe: phony daytime-server/daytime-client.exe
+
+build daytime-server-async: phony daytime-server/daytime-server-async.exe
+
+build daytime-server-async.exe: phony daytime-server/daytime-server-async.exe
+
+build daytime-server-sync: phony daytime-server/daytime-server-sync.exe
+
+build daytime-server-sync.exe: phony daytime-server/daytime-server-sync.exe
+
+build server: phony client-server/server.exe
+
+build server.exe: phony client-server/server.exe
 
 # =============================================================================
 # Folder targets.
@@ -144,9 +262,9 @@ build server: phony server.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/Projects/C++/build
+# Folder: D:/Projects/C++/Socket Server/build
 
-build all: phony client.exe server.exe
+build all: phony client-server/client.exe client-server/server.exe daytime-server/daytime-client.exe daytime-server/daytime-server-sync.exe daytime-server/daytime-server-async.exe
 
 # =============================================================================
 # Built-in targets
@@ -155,14 +273,14 @@ build all: phony client.exe server.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfig.cmake C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/BoostDetectToolset-1.84.0.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/boost_chrono-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/boost_chrono-config.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/libboost_chrono-variant-mt-shared.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/libboost_chrono-variant-mt-static.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/boost_thread-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/boost_thread-config.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/libboost_thread-variant-mt-shared.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/libboost_thread-variant-mt-static.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindBoost.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.29.2/CMakeCCompiler.cmake CMakeFiles/3.29.2/CMakeCXXCompiler.cmake CMakeFiles/3.29.2/CMakeRCCompiler.cmake CMakeFiles/3.29.2/CMakeSystem.cmake D$:/Projects/C++/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfig.cmake C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/BoostDetectToolset-1.84.0.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/boost_chrono-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/boost_chrono-config.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/libboost_chrono-variant-mt-shared.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/libboost_chrono-variant-mt-static.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/boost_thread-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/boost_thread-config.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/libboost_thread-variant-mt-shared.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/libboost_thread-variant-mt-static.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindBoost.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.29.2/CMakeCCompiler.cmake CMakeFiles/3.29.2/CMakeCXXCompiler.cmake CMakeFiles/3.29.2/CMakeRCCompiler.cmake CMakeFiles/3.29.2/CMakeSystem.cmake D$:/Projects/C++/Socket$ Server/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfig.cmake C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/BoostDetectToolset-1.84.0.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/boost_chrono-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/boost_chrono-config.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/libboost_chrono-variant-mt-shared.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/libboost_chrono-variant-mt-static.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/boost_thread-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/boost_thread-config.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/libboost_thread-variant-mt-shared.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/libboost_thread-variant-mt-static.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindBoost.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.29.2/CMakeCCompiler.cmake CMakeFiles/3.29.2/CMakeCXXCompiler.cmake CMakeFiles/3.29.2/CMakeRCCompiler.cmake CMakeFiles/3.29.2/CMakeSystem.cmake D$:/Projects/C++/CMakeLists.txt: phony
+build C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfig.cmake C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/BoostDetectToolset-1.84.0.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/boost_chrono-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/boost_chrono-config.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/libboost_chrono-variant-mt-shared.cmake C$:/msys64/ucrt64/lib/cmake/boost_chrono-1.84.0/libboost_chrono-variant-mt-static.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/boost_thread-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/boost_thread-config.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/libboost_thread-variant-mt-shared.cmake C$:/msys64/ucrt64/lib/cmake/boost_thread-1.84.0/libboost_thread-variant-mt-static.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindBoost.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.29.2/CMakeCCompiler.cmake CMakeFiles/3.29.2/CMakeCXXCompiler.cmake CMakeFiles/3.29.2/CMakeRCCompiler.cmake CMakeFiles/3.29.2/CMakeSystem.cmake D$:/Projects/C++/Socket$ Server/CMakeLists.txt: phony
 
 
 #############################################
